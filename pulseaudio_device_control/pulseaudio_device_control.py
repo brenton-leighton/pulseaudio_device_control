@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+
+
 import sys
 from enum import Enum
 import pulsectl
@@ -133,3 +136,7 @@ def main():
                             lower_volume(pulse, device)
                         case Operation.MUTE:
                             toggle_mute(pulse, device)
+
+
+if __name__ == '__main__':
+    main()
