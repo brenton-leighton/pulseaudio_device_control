@@ -110,7 +110,7 @@ def main():
 
     operation, device_type = parse_arguments()
 
-    with pulsectl.Pulse('_pulsectl.py', threading_lock=True) as pulse:
+    with pulsectl.Pulse('pulseaudio_device_control', threading_lock=True) as pulse:
 
         device_list = pulse.sink_list() if device_type == DeviceType.SINK \
             else pulse.source_list()
