@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pulseaudio_device_control"
+version = "0.1"
+description = "A simple script to control PulseAudio devices"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+keywords = ["pulseaudio"]
+
+authors = [
+  {name = "Brenton Leighton", email = "12228142+brenton-leighton@users.noreply.github.com" }
+]
+
+maintainers = [
+  {name = "Brenton Leighton", email = "12228142+brenton-leighton@users.noreply.github.com" }
+]
+
+dependencies = [
+  "pulsectl"
+]
+
+[project.urls]
+Homepage = "https://github.com/brenton-leighton/pulseaudio_device_control"
+
+[project.scripts]
+pulseaudio_device_control = "pulseaudio_device_control.pulseaudio_device_control:main"
