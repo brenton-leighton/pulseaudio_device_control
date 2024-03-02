@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pulseaudio_device_control"
-version = "0.1"
+version = "0.2"
 description = "A simple script to control PulseAudio devices"
 readme = "README.md"
 requires-python = ">=3.8"
