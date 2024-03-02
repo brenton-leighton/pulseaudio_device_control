@@ -87,7 +87,7 @@ def toggle_mute(pulse, device):
     pulse.mute(device, not device.mute)
 
 
-def next_device(pulse, device_list):
+def next_device(pulse, device_list, default_device_name):
 
     if len(device_list) == 1:
         return
@@ -122,7 +122,7 @@ def main():
             else pulse.server_info().default_source_name
 
         if operation == Operation.NEXT:
-            next_device(pulse, device_list)
+            next_device(pulse, device_list, default_device_name)
 
         else:  # raise, lower, or mute
 
